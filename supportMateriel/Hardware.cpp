@@ -113,8 +113,9 @@ int Hardware::readCounterDroite(){
     return counterDroite.read();
 }
 
-bool Hardware::detectionIseeyou(){
+bool Hardware::detectionIseeyou() {
     return ranger.detectionIseeyou();
+}
 
 void Hardware::clignoter(){
     return led.clignoter();
