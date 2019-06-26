@@ -19,6 +19,7 @@ public:
     virtual void resetCounterDroite()=0;
     virtual int readCounterGauche()=0;
     virtual int readCounterDroite()=0;
+    virtual void clignoter()=0;
 };
 
 class ServiceRequisActionMoteur {
@@ -61,6 +62,7 @@ public:
     void resetCounterDroite();
     int readCounterGauche();
     int readCounterDroite();
+    void clignoter();
 };
 
 class BrainCanevas2: public ServiceRequisActionMoteur,
@@ -80,5 +82,5 @@ public:
     void resetCounterDroite();
     int readCounterGauche();
     int readCounterDroite();
-
+    void clignoter();
 };

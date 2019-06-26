@@ -24,7 +24,7 @@ void BrainCanevas2::step() {
     }
 
     if (pasDeJeuCourrant>80 && pasDeJeuCourrant<100){
-
+        clignoter();
         return;
     }
 
@@ -39,7 +39,7 @@ void BrainCanevas2::step() {
     }
 
     if (pasDeJeuCourrant>170 && pasDeJeuCourrant<190){
-
+        clignoter();
         return;
     }
 
@@ -50,7 +50,7 @@ void BrainCanevas2::step() {
     }
 
     if (pasDeJeuCourrant>210 && pasDeJeuCourrant<230){
-
+        clignoter();
         return;
     }
 

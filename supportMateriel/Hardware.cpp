@@ -1,6 +1,7 @@
 #include "Parameters.h"
 #include "HMC5883L.h"
 #include "MotorEncoder.h"
+#include "LED.h"
 
 #define PWMGAUCHE D9
 #define DIRGAUCHE D7
@@ -18,7 +19,7 @@ HMC5883L compass(I2C_SDA,I2C_SCL);
 Counter counterGauche(PB_14);
 Counter counterDroite(PB_13);
 
-
+LED led(D12);
 
 double initHeading;
 
@@ -106,4 +107,8 @@ int Hardware::readCounterGauche(){
 
 int Hardware::readCounterDroite(){
     return counterDroite.read();
+}
+
+void Hardware::clignoter(){
+    return led.clignoter();
 }
