@@ -124,7 +124,8 @@ supportMateriel/Hardware.o: ../supportMateriel/Hardware.cpp \
  ../mbed/./platform/wait_api.h ../mbed/./hal/sleep_api.h \
  ../mbed/./platform/rtc_time.h ../mbed/./platform/Callback.h \
  ../mbed/./platform/FunctionPointer.h \
- ../supportMateriel/HMC5883L/HMC5883L.h ../supportMateriel/MotorEncoder.h
+ ../supportMateriel/HMC5883L/HMC5883L.h ../supportMateriel/MotorEncoder.h \
+ ../supportMateriel/Capteur.h .././Pulse.h
 
 .././mbed_config.h:
 
@@ -459,3 +460,7 @@ supportMateriel/Hardware.o: ../supportMateriel/Hardware.cpp \
 ../supportMateriel/HMC5883L/HMC5883L.h:
 
 ../supportMateriel/MotorEncoder.h:
+
+../supportMateriel/Capteur.h:
+
+.././Pulse.h:

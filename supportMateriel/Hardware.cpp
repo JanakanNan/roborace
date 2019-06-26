@@ -1,6 +1,7 @@
 #include "Parameters.h"
 #include "HMC5883L.h"
 #include "MotorEncoder.h"
+#include "Capteur.h"
 
 #define PWMGAUCHE D9
 #define DIRGAUCHE D7
@@ -18,6 +19,7 @@ HMC5883L compass(I2C_SDA,I2C_SCL);
 Counter counterGauche(PB_14);
 Counter counterDroite(PB_13);
 
+Capteur ranger(D3, 10, 5800.0, 100000);
 
 
 double initHeading;
@@ -106,4 +108,8 @@ int Hardware::readCounterGauche(){
 
 int Hardware::readCounterDroite(){
     return counterDroite.read();
+}
+
+bool Hardware::detectionIseeyou(){
+    return ranger.detectionIseeyou();
 }

@@ -10,6 +10,7 @@ void BrainCanevas2::resetCounterGauche(){actionMoteur->resetCounterGauche(); ret
 void BrainCanevas2::resetCounterDroite(){actionMoteur->resetCounterDroite(); return;}
 int BrainCanevas2::readCounterGauche(){return actionMoteur->readCounterGauche();}
 int BrainCanevas2::readCounterDroite(){return actionMoteur->readCounterDroite();}
+bool BrainCanevas2::detectionIseeyou(){return actionMoteur->detectionIseeyou();}
 
 void BrainCanevas2::bindServiceActionMoteur(ServiceActionMoteur* service) {
     actionMoteur=service;

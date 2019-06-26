@@ -1,5 +1,5 @@
-algorithms/BrainCanevas2.o: ../algorithms/BrainCanevas2.cpp \
- .././mbed_config.h ../characteristics/Parameters.h ../mbed/./mbed.h \
+supportMateriel/Capteur.o: ../supportMateriel/Capteur.cpp \
+ .././mbed_config.h ../supportMateriel/Capteur.h ../mbed/./mbed.h \
  ../mbed/./platform/toolchain.h ../mbed/./platform/mbed_preprocessor.h \
  ../mbed/./platform/platform.h \
  ../mbed/TARGET_NUCLEO_F401RE/TARGET_STM/TARGET_STM32F4/device.h \
@@ -123,12 +123,11 @@ algorithms/BrainCanevas2.o: ../algorithms/BrainCanevas2.cpp \
  ../mbed/./drivers/InterruptIn.h ../mbed/./hal/gpio_irq_api.h \
  ../mbed/./platform/wait_api.h ../mbed/./hal/sleep_api.h \
  ../mbed/./platform/rtc_time.h ../mbed/./platform/Callback.h \
- ../mbed/./platform/FunctionPointer.h ../characteristics/BrainCanevas2.h \
- ../supportMateriel/Capteur.h .././Pulse.h
+ ../mbed/./platform/FunctionPointer.h .././Pulse.h
 
 .././mbed_config.h:
 
-../characteristics/Parameters.h:
+../supportMateriel/Capteur.h:
 
 ../mbed/./mbed.h:
 
@@ -455,9 +454,5 @@ algorithms/BrainCanevas2.o: ../algorithms/BrainCanevas2.cpp \
 ../mbed/./platform/Callback.h:
 
 ../mbed/./platform/FunctionPointer.h:
-
-../characteristics/BrainCanevas2.h:
-
-../supportMateriel/Capteur.h:
 
 .././Pulse.h:

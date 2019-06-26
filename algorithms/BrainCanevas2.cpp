@@ -3,6 +3,8 @@
 //
 #include "Parameters.h"
 #include "BrainCanevas2.h"
+#include "Capteur.h"
+
 
 int MAXPASDEJEU=900;
 
@@ -14,6 +16,9 @@ void BrainCanevas2::activate() {
 }
 
 void BrainCanevas2::step() {
+
+    //objet bloquant
+    if (detectionIseeyou() == true){stop();}
 
     if (pasDeJeuCourrant > MAXPASDEJEU) { return; }
     pasDeJeuCourrant++;
