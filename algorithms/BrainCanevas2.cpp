@@ -24,6 +24,7 @@ void BrainCanevas2::step() {
     }
 
     if (pasDeJeuCourrant>80 && pasDeJeuCourrant<100){
+
         return;
     }
 
@@ -36,5 +37,27 @@ void BrainCanevas2::step() {
         move();
         return;
     }
+
+
+    if (pasDeJeuCourrant>=140 && pasDeJeuCourrant<=160){
+        stepTurn(RIGHT);
+        return;
+    }
+
+    if (pasDeJeuCourrant>=141 && pasDeJeuCourrant<=160){
+        move();
+        return;
+    }
+
+    if (pasDeJeuCourrant>=170 && pasDeJeuCourrant<=200){
+        move();
+        return;
+    }
+
+    if (pasDeJeuCourrant>=210){
+        return;
+    }
+
+    return;
 
 }

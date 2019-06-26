@@ -18,6 +18,8 @@ HMC5883L compass(I2C_SDA,I2C_SCL);
 Counter counterGauche(PB_14);
 Counter counterDroite(PB_13);
 
+
+
 double initHeading;
 
 Hardware::Hardware() {

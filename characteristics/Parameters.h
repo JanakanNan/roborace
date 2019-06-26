@@ -80,4 +80,5 @@ public:
     void resetCounterDroite();
     int readCounterGauche();
     int readCounterDroite();
+
 };
