@@ -19,7 +19,11 @@ public:
     virtual void resetCounterDroite()=0;
     virtual int readCounterGauche()=0;
     virtual int readCounterDroite()=0;
+<<<<<<< HEAD
     virtual bool detectionIseeyou() = 0;
+=======
+    virtual void clignoter()=0;
+>>>>>>> LED
 };
 
 class ServiceRequisActionMoteur {
@@ -64,6 +68,7 @@ public:
     int readCounterGauche();
     int readCounterDroite();
     bool detectionIseeyou();
+    void clignoter();
 };
 
 class BrainCanevas2: public ServiceRequisActionMoteur,
@@ -85,5 +90,5 @@ public:
     int readCounterDroite();
     bool detectionIseeyou();
     void stop();
+    void clignoter();
 };
-

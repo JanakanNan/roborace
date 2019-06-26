@@ -2,6 +2,7 @@
 #include "HMC5883L.h"
 #include "MotorEncoder.h"
 #include "Capteur.h"
+#include "LED.h"
 
 #define PWMGAUCHE D9
 #define DIRGAUCHE D7
@@ -20,6 +21,8 @@ Counter counterGauche(PB_14);
 Counter counterDroite(PB_13);
 
 Capteur ranger(D3, 10, 5800.0, 100000);
+
+LED led(D12);
 
 
 double initHeading;
@@ -112,4 +115,7 @@ int Hardware::readCounterDroite(){
 
 bool Hardware::detectionIseeyou(){
     return ranger.detectionIseeyou();
+
+void Hardware::clignoter(){
+    return led.clignoter();
 }
