@@ -36,8 +36,8 @@ Hardware::Hardware() {
 void Hardware::move() {
     dirgauche=0;
     dirdroite=1;
-    pwmgauche.pulsewidth_us(400);
-    pwmdroite.pulsewidth_us(400);
+    pwmgauche.pulsewidth_us(450);
+    pwmdroite.pulsewidth_us(450);
     return;
 }
 

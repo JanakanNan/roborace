@@ -28,33 +28,34 @@ void BrainCanevas2::step() {
         return;
     }
 
-    if (pasDeJeuCourrant<=100){
+    if (pasDeJeuCourrant>100 && pasDeJeuCourrant<130){
         stepTurn(LEFT);
         return;
     }
 
-    if (pasDeJeuCourrant>=120 && pasDeJeuCourrant<=140){
+    if (pasDeJeuCourrant>=130 && pasDeJeuCourrant<=170){
         move();
         return;
     }
 
+    if (pasDeJeuCourrant>170 && pasDeJeuCourrant<190){
 
-    if (pasDeJeuCourrant>=140 && pasDeJeuCourrant<=160){
+        return;
+    }
+
+
+    if (pasDeJeuCourrant>190 && pasDeJeuCourrant<=210){
         stepTurn(RIGHT);
         return;
     }
 
-    if (pasDeJeuCourrant>=141 && pasDeJeuCourrant<=160){
-        move();
+    if (pasDeJeuCourrant>210 && pasDeJeuCourrant<230){
+
         return;
     }
 
-    if (pasDeJeuCourrant>=170 && pasDeJeuCourrant<=200){
+    if (pasDeJeuCourrant>230 && pasDeJeuCourrant<=290){
         move();
-        return;
-    }
-
-    if (pasDeJeuCourrant>=210){
         return;
     }
 
